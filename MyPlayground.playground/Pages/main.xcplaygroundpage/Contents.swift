@@ -15,8 +15,15 @@
  */
 // write your code here
 
+func continents(continentName: String, numberOfCountries: Int) {
+    
+    print("\(continentName) is a continent which contains \(numberOfCountries) countries.")
+    
+}
 
-
+var continent = "Africa"
+var countries = 54
+continents(continent, numberOfCountries: countries)
 
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
@@ -25,7 +32,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting: "Hello")
 
 
 
@@ -33,8 +40,8 @@ greeting("Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
-    print("There are \(days) in \(month)")
+func daysInMonth(month: String, days: Int) {
+    print("There are \(days) days in \(month)")
 }
 
 daysInMonth("November", days: 30)
@@ -47,8 +54,17 @@ daysInMonth("November", days: 30)
  */
 // write your code here
 
+func favoriteDrink(beverage: String, numberOfBottles: Int, placeKept: String) {
+    
+    print("\(numberOfBottles) bottles of \(beverage) on the \(placeKept) wall")
+    
+}
 
+var beverage = "Orange Soda"
+var numberOfBottles = 33
+var placeKept = "bedroom"
 
+favoriteDrink(beverage, numberOfBottles: numberOfBottles, placeKept: placeKept)
 
 /*:
  [Solution](solution)
